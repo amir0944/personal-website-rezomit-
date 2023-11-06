@@ -798,12 +798,12 @@ video {
   width: 200px;
 }
 
-.w-\[310px\] {
-  width: 310px;
+.w-\[290px\] {
+  width: 290px;
 }
 
-.w-\[320px\] {
-  width: 320px;
+.w-\[310px\] {
+  width: 310px;
 }
 
 .w-\[60px\] {
@@ -822,6 +822,10 @@ video {
   width: 90px;
 }
 
+.w-\[\`px\] {
+  width: `px;
+}
+
 .w-auto {
   width: auto;
 }
@@ -833,6 +837,10 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[320px\] {
+  width: 320px;
 }
 
 .max-w-max {
@@ -911,11 +919,6 @@ video {
 .rounded-r-3xl {
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
-}
-
-.rounded-r-full {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
 }
 
 .rounded-t-xl {
@@ -1026,10 +1029,6 @@ video {
   padding-top: 1rem;
 }
 
-.pt-\[4rem\] {
-  padding-top: 4rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1086,6 +1085,10 @@ video {
   line-height: 2rem;
 }
 
+.text-\[\#000000a3\] {
+  color: #000000a3;
+}
+
 .text-\[\#080808\] {
   --tw-text-opacity: 1;
   color: rgb(8 8 8 / var(--tw-text-opacity));
@@ -1126,10 +1129,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#000000a3\] {
-  color: #000000a3;
-}
-
 @font-face {
   font-family: "dana-light";
 
@@ -1168,6 +1167,24 @@ video {
 
 body {
   font-family: "dana-light";
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  border-radius: 30%;
+  padding: 0.6rem 0.8rem;
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  border-radius: 30%;
+  padding: 0.6rem 0.8rem;
 }
 
 .focus\:outline-none:focus {
@@ -1223,8 +1240,16 @@ body {
     margin-top: 12rem;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-4\/5 {
@@ -1270,6 +1295,10 @@ body {
 
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .lg\:justify-center {
