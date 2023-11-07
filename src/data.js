@@ -209,13 +209,14 @@ data.forEach((item, key) => {
   class="grid grid-cols-1 lg:grid-cols-2 p-3 mb-4 rounded-xl bg-[#fafafa] float-none gap-4"
 >
   <div>
-    <img
+  <a href="./education/educationDetails.html"><img
       src="${item.image}"
       class="w-full lg:w-[90%] h-full rounded-xl"
     />
+    </a>
   </div>
   <div>
-    <h1 class="text-[13px] font-[dana-bold]">${item.title}</h1>
+    <a href="./education/educationDetails.html"><h1 class="text-[13px] font-[dana-bold]">${item.title}</h1></a>
     <p
       class="w-[80%] mx-auto text-[10px] my-2 text-[#000000a3] text-justify"
     >
