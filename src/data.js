@@ -38,11 +38,12 @@ data = [
   },
 ];
 
-data.forEach((item) => {
-  const swiperSlide = document.createElement("div");
-  swiperSlide.className = "swiper-slide";
+data.forEach((item, key) => {
+  if (key <= 5) {
+    const swiperSlide = document.createElement("div");
+    swiperSlide.className = "swiper-slide";
 
-  const slideContent = `
+    const slideContent = `
 <div class="bg-[#fafafa] w-[290px] lg:w-[280px] h-[340px] p-2 mb-2 rounded-xl">
  <img src="${item.image}" class="rounded-xl" alt="" />
  <p class="font-[dana-light] text-[13px] text-center pt-2">${item.title}</p>
@@ -52,9 +53,10 @@ data.forEach((item) => {
 </div>
 `;
 
-  swiperSlide.innerHTML = slideContent;
+    swiperSlide.innerHTML = slideContent;
 
-  swiperWrapperbestPortfolio.appendChild(swiperSlide);
+    swiperWrapperbestPortfolio.appendChild(swiperSlide);
+  }
 });
 // portfolio
 const swiperWrapperportfolio = document.querySelector("#portfolio");
@@ -111,13 +113,14 @@ data = [
   },
 ];
 
-data.forEach((item) => {
-  const swiperSlide = document.createElement("div");
-  const swiperSlideD = document.createElement("div");
+data.forEach((item, key) => {
+  if (key <= 7) {
+    const swiperSlide = document.createElement("div");
+    const swiperSlideD = document.createElement("div");
 
-  swiperSlide.className = "swiper-slide";
+    swiperSlide.className = "swiper-slide";
 
-  const slideContent = `
+    const slideContent = `
   <div class="bg-[#fafafa] w-[290px] lg:w-[280px] h-[340px] p-2 mb-2 rounded-xl">
   <img src="${item.image}" alt="" />
   <p class="font-[dana-light] text-[13px] text-center pt-4">
@@ -129,20 +132,22 @@ data.forEach((item) => {
   </div>
   <div class="flex items-center justify-between py-6">
     <img src="${item.score}" alt="" />
-    <button
+    <a 
+      href="./portfolio/portfolioDetails.html"
       class="flex border-[none] items-center bg-black text-white p-2 rounded-xl"
     >
       <img src="../assets/v6-icon (free)2.png" alt="" />
-    </button>
+    </a>
   </div>
 </div>
 `;
 
-  swiperSlide.innerHTML = slideContent;
-  swiperSlideD.innerHTML = slideContent;
+    swiperSlide.innerHTML = slideContent;
+    swiperSlideD.innerHTML = slideContent;
 
-  swiperWrapperportfolio.appendChild(swiperSlide);
-  swiperWrapperportfolioD.appendChild(swiperSlideD);
+    swiperWrapperportfolio.appendChild(swiperSlide);
+    swiperWrapperportfolioD.appendChild(swiperSlideD);
+  }
 });
 // education
 const swiperWrappereducation = document.querySelector("#education");
@@ -273,10 +278,11 @@ data = [
   },
 ];
 
-data.forEach((item) => {
-  const swiperSlide = document.createElement("div");
+data.forEach((item, key) => {
+  if (key <= 5) {
+    const swiperSlide = document.createElement("div");
 
-  const slideContent = `
+    const slideContent = `
   <div class="bg-[#fafafa] p-3 rounded-xl max-w-max m-2">
   <img src="${item.image}" class="rounded-xl" alt="" />
   <div class="flex justify-between mt-[1rem]">
@@ -286,7 +292,8 @@ data.forEach((item) => {
 </div>
 `;
 
-  swiperSlide.innerHTML = slideContent;
+    swiperSlide.innerHTML = slideContent;
 
-  swiperWrapperpartners.appendChild(swiperSlide);
+    swiperWrapperpartners.appendChild(swiperSlide);
+  }
 });
