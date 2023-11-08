@@ -58,71 +58,102 @@ data.forEach((item, key) => {
     swiperWrapperbestPortfolio.appendChild(swiperSlide);
   }
 });
+
 // portfolio
-const swiperWrapperportfolio = document.querySelector("#portfolio");
-const swiperWrapperportfolioD = document.querySelector("#portfolioD");
 
-data = [
-  {
-    image: "../assets/star/img4.png",
-    title: "طراحی اپلیکیشن خبری برای مجموعه رستا وب",
-    rating: "متوسط",
-    score: "../assets/s2.png",
-  },
-  {
-    image: "../assets/star/img3.png",
-    title: "ساخت موزیک پلیر و برنامه برای کاهش نویز",
-    rating: "متوسط",
-    score: "../assets/s5.png",
-  },
-  {
-    image: "../assets/star/img2.png",
-    title: " الگوریتم پیشرفته برای یادگیری آموزش برنامه نویسی",
-    rating: "متوسط",
-    score: "../assets/s3.png",
-  },
-  {
-    image: "../assets/star/img1.png",
-    title: "طراحی رابط کاربری برای سیستم عامل مک",
-    rating: "متوسط",
-    score: "../assets/S4.png",
-  },
-  {
-    image: "../assets/star/img8.png",
-    title: "مدیریت پروژه منابع انسانی",
-    rating: "متوسط",
-    score: "../assets/s3.png",
-  },
-  {
-    image: "../assets/star/img7.png",
-    title: "طراحی چارت ها و گزارش های ماهانه شرکت بهسان",
-    rating: "متوسط",
-    score: "../assets/s3.png",
-  },
-  {
-    image: "../assets/star/img6.png",
-    title: "ساخت اپ ورزشی برای لاغری و عضله سازی",
-    rating: "متوسط",
-    score: "../assets/s1.png",
-  },
-  {
-    image: "../assets/star/img3.png",
-    title: "برنامه نویسی پروژه های کاربری نسخه موبایل...",
-    rating: "متوسط",
-    score: "../assets/s5.png",
-  },
-];
+function portfolioDataSet(category = "all") {
+  const swiperWrapperportfolio = document.querySelector("#portfolio");
+  const swiperWrapperportfolioD = document.querySelector("#portfolioD");
 
-data.forEach((item, key) => {
-  if (key <= 7) {
-    const swiperSlide = document.createElement("div");
-    const swiperSlideD = document.createElement("div");
+  $("#portfolio").empty();
+  $("#portfolioD").empty();
 
-    swiperSlide.className = "swiper-slide";
+  data = [
+    {
+      image: "../assets/star/img4.png",
+      title: "طراحی اپلیکیشن خبری برای مجموعه رستا وب",
+      rating: "متوسط",
+      score: "../assets/s2.png",
+      category: "design",
+    },
+    {
+      image: "../assets/star/img3.png",
+      title: "ساخت موزیک پلیر و برنامه برای کاهش نویز",
+      rating: "متوسط",
+      score: "../assets/s5.png",
+      category: "game",
+    },
+    {
+      image: "../assets/star/img2.png",
+      title: " الگوریتم پیشرفته برای یادگیری آموزش برنامه نویسی",
+      rating: "متوسط",
+      score: "../assets/s3.png",
+      category: "programming",
+    },
+    {
+      image: "../assets/star/img1.png",
+      title: "طراحی رابط کاربری برای سیستم عامل مک",
+      rating: "متوسط",
+      score: "../assets/S4.png",
+      category: "design",
+    },
+    {
+      image: "../assets/star/img8.png",
+      title: "مدیریت پروژه منابع انسانی",
+      rating: "متوسط",
+      score: "../assets/s3.png",
+      category: "programming",
+    },
+    {
+      image: "../assets/star/img7.png",
+      title: "طراحی چارت ها و گزارش های ماهانه شرکت بهسان",
+      rating: "متوسط",
+      score: "../assets/s3.png",
+      category: "programming",
+    },
+    {
+      image: "../assets/star/img6.png",
+      title: "ساخت اپ ورزشی برای لاغری و عضله سازی",
+      rating: "متوسط",
+      score: "../assets/s1.png",
+      category: "programming",
+    },
+    {
+      image: "../assets/star/img3.png",
+      title: "برنامه نویسی پروژه های کاربری نسخه موبایل...",
+      rating: "متوسط",
+      score: "../assets/s5.png",
+      category: "programming",
+    },
+  ];
 
-    const slideContent = `
-  <div class="bg-[#fafafa] w-[290px] lg:w-[280px] h-[340px] p-2 mb-2 rounded-xl">
-  <img src="${item.image}" alt="" />
+  let new_data = [];
+
+  let data_filtre_length = 0;
+  let maxL = 7;
+
+  data.forEach((item, key) => {
+    if (item.category == category || category == "all") {
+      data_filtre_length++;
+      new_data.push(item);
+    }
+  });
+  data_filtre_length > 7 ? (maxL = 7) : (maxL = data_filtre_length);
+
+  console.log(maxL);
+  console.log("-------------------");
+
+  new_data.forEach((item, key) => {
+    if (key <= maxL) {
+      console.log(key);
+      const swiperSlide = document.createElement("div");
+      const swiperSlideD = document.createElement("div");
+
+      swiperSlide.className = "swiper-slide";
+
+      const slideContent = `
+  <div class="bg-[#fafafa] w-[290px] lg:w-[280px] h-[340px] p-2 m-2 mb-2 rounded-xl">
+  <img src="${item.image}" class="rounded-xl" alt="" />
   <p class="font-[dana-light] text-[13px] text-center pt-4">
     ${item.title}
   </p>
@@ -142,13 +173,15 @@ data.forEach((item, key) => {
 </div>
 `;
 
-    swiperSlide.innerHTML = slideContent;
-    swiperSlideD.innerHTML = slideContent;
+      swiperSlide.innerHTML = slideContent;
+      swiperSlideD.innerHTML = slideContent;
 
-    swiperWrapperportfolio.appendChild(swiperSlide);
-    swiperWrapperportfolioD.appendChild(swiperSlideD);
-  }
-});
+      swiperWrapperportfolio.appendChild(swiperSlide);
+      swiperWrapperportfolioD.appendChild(swiperSlideD);
+    }
+  });
+}
+
 // education
 const swiperWrappereducation = document.querySelector("#education");
 

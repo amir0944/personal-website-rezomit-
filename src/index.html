@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <title>Document</title>
+    <title>رزومیت</title>
     <style>
       .backimg {
         background-image: url("../assets/background.png");
@@ -105,7 +105,7 @@
         <!-- end left bar -->
       </div>
       <!-- end image -->
-      <!-- start search Examples of works -->
+      <!-- start search portfolio -->
       <div class="justify-center mb-[4rem] w-4/5 m-auto">
         <!-- title -->
         <div class="text-center mb-4">
@@ -136,27 +136,39 @@
           >
         </div>
       </div>
-      <!-- end search Examples of works -->
-      <!-- start list Examples of works -->
+      <!-- end search portfolio -->
+      <!-- start portfolio -->
       <div id="test" class="mb-[3rem] w-4/5 m-auto">
         <!-- meno -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 mb-4">
-          <div class="pt-3">
+        <div class="grid grid-cols-1 lg:grid-cols-3 mb-4">
+          <div class="pt-3 col-span-1">
             <h1 class="font-[plasma] text-[2rem] lg:text-[3rem]">
               نمونه کارها
             </h1>
           </div>
           <div
-            class="flex pt-3 justify-normal lg:justify-center text-center items-center overflow-x-scroll md:overflow-hidden"
+            class="col-span-2 hidden lg:flex pt-3 justify-normal lg:justify-center text-center items-center overflow-x-scroll md:overflow-hidden"
           >
             <div class="flex gap-1 items-center">
-              <a href="#" class="w-[100px]">گیم</a>
-              <a href="#" class="w-[100px]">تصویر سازی</a>
-              <a href="#" class="w-[100px]">برنامه نویسی</a>
-              <a href="#" class="w-[100px]">طراحی</a>
-              <a href="#" class="p-2 md:p-3 bg-[#fafafa] rounded-xl w-[130px]"
-                >همه نمونه کارها</a
+              <button category="game" class="w-[115px] category-button">
+                گیم
+              </button>
+              <button category="image" class="w-[115px] category-button">
+                تصویر سازی
+              </button>
+              <button category="programming" class="w-[115px] category-button">
+                برنامه نویسی
+              </button>
+              <button category="design" class="w-[115px] category-button">
+                طراحی
+              </button>
+              <button
+                category="all"
+                active="true"
+                class="w-[115px] p-2 md:p-3 bg-[#fafafa] rounded-xl category-button category-button-active"
               >
+                همه
+              </button>
               <img
                 src="../assets/v6-icon (free)3.png"
                 class="p-2 md:p-3 rounded-xl bg-[#fafafa]"
@@ -167,9 +179,10 @@
         </div>
         <!-- list -->
         <div
-          class="hidden lg:flex lg:flex-wrap lg:justify-between"
+          class="hidden lg:flex lg:flex-wrap lg:justify-center"
           id="portfolioD"
         ></div>
+
         <div class="flex flex-wrap justify-center lg:justify-between lg:hidden">
           <div class="swiper slider w-max m-auto">
             <div class="swiper-wrapper" id="portfolio"></div>
@@ -178,8 +191,7 @@
           </div>
         </div>
       </div>
-      <!-- end list Examples of works -->
-
+      <!-- end portfolio -->
       <!-- start partners -->
       <div
         class="grid grid-cols-1 lg:grid lg:grid-cols-6 mb-[26rem] lg:mb-[7rem] mt-0 lg:mt-[12rem]"
@@ -214,7 +226,11 @@
       <div id="test2" class="w-4/5 m-auto">
         <div class="flex justify-between items-center mb-4">
           <h1 class="text-[2rem] lg:text-[3rem] font-[plasma]">سوابق آموزشی</h1>
-          <a href="#" class="p-2 lg:p-3 bg-[#fafafa] rounded-xl">مشاهده همه</a>
+          <a
+            href="./education/educationAll.html"
+            class="p-2 lg:p-3 bg-[#fafafa] rounded-xl"
+            >مشاهده همه</a
+          >
         </div>
         <div class="grid grid-rows-1 lg:grid-cols-2 gap-2" id="education"></div>
       </div>
@@ -254,7 +270,11 @@
           <h1 class="text-[2rem] lg:text-[3rem] font-[plasma]">
             بهترین نمونه کارها
           </h1>
-          <a href="#" class="p-2 lg:p-3 bg-[#fafafa] rounded-xl">مشاهده همه</a>
+          <a
+            href="./education/educationAll.html"
+            class="p-2 lg:p-3 bg-[#fafafa] rounded-xl"
+            >مشاهده همه</a
+          >
         </div>
         <div class="flex flex-wrap justify-center lg:justify-between">
           <div class="swiper slider2 w-max m-auto">
@@ -309,7 +329,37 @@
       <!-- end footer -->
     </div>
     <!-- end containeer -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./data.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      portfolioDataSet();
+
+      $(document).on("click", ".category-button", function () {
+        portfolioDataSet($(this).attr("category"));
+
+        let isActive = $(this).attr("active");
+
+        if (!isActive) {
+          $(".category-button-active").removeAttr("active");
+          $(".category-button-active").removeClass(
+            "p-2 md:p-3 bg-[#fafafa] rounded-xl"
+          );
+          $(".category-button-active").removeClass("category-button-active");
+
+          $(this).attr("active", "true");
+          $(this).addClass("category-button-active");
+          $(this).addClass("p-2 md:p-3 bg-[#fafafa] rounded-xl");
+        }
+      });
+    </script>
     <script>
       var swiper = new Swiper(".slider", {
         slidesPerView: 1,
@@ -380,6 +430,5 @@
         },
       });
     </script>
-    <script src="./data.js"></script>
   </body>
 </html>
