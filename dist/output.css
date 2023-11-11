@@ -1255,6 +1255,10 @@ body {
   background-color: #fd3b3117;
 }
 
+:is(.dark .dark\:bg-\[\]) {
+  background-color: ;
+}
+
 :is(.dark .dark\:text-gray-300) {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
