@@ -960,6 +960,26 @@ video {
   border-top-right-radius: 0.75rem;
 }
 
+.rounded-r-\[26px\] {
+  border-top-right-radius: 26px;
+  border-bottom-right-radius: 26px;
+}
+
+.rounded-r-\[28px\] {
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.rounded-r-\[30px\] {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.rounded-r-\[32px\] {
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
 .rounded-ee-\[50px\] {
   border-end-end-radius: 50px;
 }
