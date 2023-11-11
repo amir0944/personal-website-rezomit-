@@ -18,15 +18,36 @@
     </style>
   </head>
 
-  <body dir="rtl" style="overflow-x: hidden">
+  <body dir="rtl" style="overflow-x: hidden" class="dark:bg-[#1c1c28]">
+    <!-- start dark mode -->
+    <div
+      class="w-4/5 m-auto p-2 rounded-xl bg-[#fafafa] dark:bg-[#28293d] dark:text-white flex justify-between items-center"
+    >
+      <h1></h1>
+      <div class="flex gap-4">
+        <img
+          src="../../assets/sun.png"
+          class="w-[40px] p-2 rounded-xl bg-white sun"
+          alt=""
+        />
+        <img
+          src="../../assets/moon.png"
+          class="w-[40px] p-2 rounded-xl bg-white moon"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- end daek mode -->
     <!-- start container -->
     <div class="m-auto mt-[2rem]">
       <!-- start header -->
       <div
-        class="w-4/5 m-auto flex justify-between items-center p-2 rounded-xl bg-[#fafafa]"
+        class="w-4/5 m-auto flex justify-between items-center p-2 rounded-xl bg-[#fafafa] dark:bg-[#28293d]"
       >
-        <p class="text-[#3E3232] text-[1rem] p-2">بازگشت به صفحه اصلی</p>
-        <a href="../index.html" class="rounded-xl bg-[white]">
+        <p class="text-[#3E3232] dark:text-white text-[1rem] p-2">
+          بازگشت به صفحه اصلی
+        </p>
+        <a href="../index.html" class="rounded-xl bg-[white] dark:bg-[#b6c1ff]">
           <img src="../../assets/v6-icon (free).png" alt="" />
         </a>
       </div>
@@ -96,14 +117,14 @@
       </div>
       <!-- end education -->
       <!-- start best portfolio -->
-      <div class="mt-[2rem] w-4/5 m-auto">
+      <div class="mt-[2rem] w-4/5 m-auto dark:text-white">
         <div class="flex justify-between items-center mb-4">
           <h1 class="text-[2rem] lg:text-[3rem] font-[plasma]">
             بهترین نمونه کارها
           </h1>
           <a
             href="./educationAll.html"
-            class="p-2 lg:p-3 bg-[#fafafa] rounded-xl"
+            class="p-2 lg:p-3 bg-[#fafafa] dark:bg-[#28293d] rounded-xl"
             >مشاهده همه</a
           >
         </div>
@@ -117,46 +138,48 @@
       </div>
       <!-- end best portfolio -->
       <!-- start footer -->
-      <div
-        class="p-4 rounded-t-xl bg-[#fafafa] w-4/5 m-auto flex-none items-center mt-[2rem]"
-      >
-        <div class="grid grid-cols-1 lg:grid lg:grid-cols-6">
-          <img
-            src="../../assets/codern 1.png"
-            class="m-auto lg:m-0 col-span-1 w-[140px]"
-            alt=""
-          />
+        <div
+          class="p-4 rounded-t-xl bg-[#fafafa] dark:bg-[#28293d] w-4/5 m-auto flex-none items-center mt-[2rem]"
+        >
+          <div class="grid grid-cols-1 lg:grid lg:grid-cols-6">
+            <img
+              src="../../assets/codern 1.png"
+              class="m-auto lg:m-0 col-span-1 w-[140px]"
+              alt=""
+            />
+            <div
+              class="bg-[#F5F2FA] dark:bg-[#292a39] px-10 py-4 text-right rounded-xl rounded-ee-[50px] col-span-5 h-max"
+            >
+              <p class="leading-6 text-[#080808] dark:text-white text-[0.75rem]">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+                طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+              </p>
+            </div>
+          </div>
           <div
-            class="bg-[#F5F2FA] px-10 py-4 text-right rounded-xl rounded-ee-[50px] col-span-5 h-max"
+            class="grid grid-cols-1 lg:grid lg:grid-cols-2 px-[2rem] py-4 bg-[#F5F5F5] dark:bg-[#292a39] rounded-xl mt-[4rem]"
           >
-            <p class="leading-6 text-[#080808] text-[0.75rem]">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
-              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
-              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
-              طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+            <p
+              class="text-center lg:text-right text-[#3E3232] dark:text-white text-[0.75rem]"
+            >
+              all copyright &copy; 2022 reserved
+            </p>
+            <p
+              class="text-center lg:text-left mt-8 lg:mt-0 text-[#3E3232] dark:text-white text-[0.75rem]"
+            >
+              ساخته شده در استودیو کد سفید
             </p>
           </div>
         </div>
-        <div
-          class="grid grid-cols-1 lg:grid lg:grid-cols-2 px-[2rem] py-4 bg-[#F5F5F5] rounded-xl mt-[4rem]"
-        >
-          <p class="text-center lg:text-right text-[#3E3232] text-[0.75rem]">
-            all copyright &copy; 2022 reserved
-          </p>
-          <p
-            class="text-center lg:text-left mt-8 lg:mt-0 text-[#3E3232] text-[0.75rem]"
-          >
-            ساخته شده در استودیو کد سفید
-          </p>
-        </div>
-      </div>
       <!-- end footer -->
     </div>
     <!-- end containeer -->
@@ -300,5 +323,6 @@
       });
     </script>
     <script src="./data.js"></script>
+    <script src="./modAll.js"></script>
   </body>
 </html>

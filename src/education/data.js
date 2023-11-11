@@ -2,39 +2,39 @@
 const swiperWrapperbestPortfolio = document.querySelector("#bestPortfolio");
 data = [
   {
+    image: "../../assets/star/img1.png",
+    title: "طراحی رابط کاربری برای سیستم عامل مک",
+    rating: "متوسط",
+    score: "../../assets/S5.png",
+    category: "design",
+  },
+  {
     image: "../../assets/star/img8.png",
     title: "مدیریت پروژه منابع انسانی",
-    score: "../../assets/s1.png",
+    rating: "متوسط",
+    score: "../../assets/s5.png",
+    category: "programming",
   },
   {
     image: "../../assets/star/img7.png",
     title: "طراحی چارت ها و گزارش های ماهانه شرکت بهسان",
-    score: "../../assets/s2.png",
+    rating: "متوسط",
+    score: "../../assets/s5.png",
+    category: "programming",
   },
   {
     image: "../../assets/star/img6.png",
     title: "ساخت اپ ورزشی برای لاغری و عضله سازی",
-    score: "../../assets/s1.png",
+    rating: "متوسط",
+    score: "../../assets/s5.png",
+    category: "programming",
   },
   {
     image: "../../assets/star/img3.png",
     title: "برنامه نویسی پروژه های کاربری نسخه موبایل...",
-    score: "../../assets/s3.png",
-  },
-  {
-    image: "../../assets/star/img7.png",
-    title: "طراحی چارت ها و گزارش های ماهانه شرکت بهسان",
-    score: "../../assets/s2.png",
-  },
-  {
-    image: "../../assets/star/img6.png",
-    title: "ساخت اپ ورزشی برای لاغری و عضله سازی",
-    score: "../../assets/s1.png",
-  },
-  {
-    image: "../../assets/star/img3.png",
-    title: "برنامه نویسی پروژه های کاربری نسخه موبایل...",
-    score: "../../assets/s4.png",
+    rating: "متوسط",
+    score: "../../assets/s5.png",
+    category: "programming",
   },
 ];
 
@@ -44,13 +44,29 @@ data.forEach((item, key) => {
     swiperSlide.className = "swiper-slide";
 
     const slideContent = `
-<div class="bg-[#fafafa] w-[290px] lg:w-[280px] h-[340px] p-2 mb-2 rounded-xl">
- <img src="${item.image}" class="rounded-xl" alt="" />
- <p class="font-[dana-light] text-[13px] text-center pt-2">${item.title}</p>
- <div class="flex items-center mt-[4rem]">
-   <img src="${item.score}" alt="" />
- </div>
-</div>
+    <div class="bg-[#fafafa] dark:bg-[#28293d] dark:text-white w-[290px] lg:w-[280px] h-[340px] p-2 m-2 mb-2 rounded-xl">
+    <a 
+    href="../portfolio/portfolioDetails.html"
+    ><img src="${item.image}" class="rounded-xl" alt="" /></a>
+    <a 
+    href="../portfolio/portfolioDetails.html"
+    ><p class="font-[dana-light] text-[13px] text-center pt-4">
+      ${item.title}
+    </p></a>
+    <div class="flex items-center mr-2 mt-2">
+      <img src="../../assets/v6-icon (free)4.png" class="pl-2" alt="" />
+      <p class="text-[gray]">${item.rating}</p>
+    </div>
+    <div class="flex items-center justify-between py-6">
+      <img src="${item.score}" alt="" />
+      <a 
+        href="../portfolio/portfolioDetails.html"
+        class="flex border-[none] items-center bg-black text-white p-2 rounded-xl"
+      >
+        <img src="../../assets/v6-icon (free)2.png" alt="" />
+      </a>
+    </div>
+  </div>
 `;
 
     swiperSlide.innerHTML = slideContent;
@@ -143,7 +159,7 @@ data.forEach((item, key) => {
 
     const slideContent = `
   <div
-  class="grid grid-cols-1 lg:grid-cols-2 p-3 mb-4 rounded-xl bg-[#fafafa] float-none gap-4"
+  class="grid grid-cols-1 lg:grid-cols-2 p-3 mb-4 rounded-xl bg-[#fafafa]  dark:bg-[#28293d] dark:text-white  float-none gap-4"
 >
   <div>
   <a href="./educationDetails.html"><img
@@ -155,7 +171,7 @@ data.forEach((item, key) => {
   <div>
     <a href="./educationDetails.html"><h1 class="text-[13px] font-[dana-bold]">${item.title}</h1></a>
     <p
-      class="w-[80%] mx-auto text-[10px] my-2 text-[#000000a3] text-justify"
+      class="w-[80%] mx-auto text-[10px] my-2 text-[#000000a3] dark:text-gray-300 text-justify"
     >
       ${item.text}
     </p>
@@ -236,7 +252,7 @@ data.forEach((item, key) => {
 
     const slideContent = `
   <div
-  class="grid grid-cols-1 lg:grid-cols-2 p-3 mb-4 rounded-xl bg-[#fafafa] float-none gap-4"
+  class="grid grid-cols-1 lg:grid-cols-2 p-3 mb-4 rounded-xl bg-[#fafafa]  dark:bg-[#28293d] dark:text-white  float-none gap-4"
 >
   <div>
   <a href="./educationDetails.html"><img
@@ -248,7 +264,7 @@ data.forEach((item, key) => {
   <div>
     <a href="./educationDetails.html"><h1 class="text-[13px] font-[dana-bold]">${item.title}</h1></a>
     <p
-      class="w-[80%] mx-auto text-[10px] my-2 text-[#000000a3] text-justify"
+      class="w-[80%] mx-auto text-[10px] my-2 text-[#000000a3] dark:text-gray-300 text-justify"
     >
       ${item.text}
     </p>
@@ -349,7 +365,7 @@ data.forEach((item) => {
 
   const slideContent = `
   <div
-  class="p-3 m-4 mb-4 rounded-xl bg-[#fafafa] float-none gap-4"
+  class="p-3 m-4 mb-4 rounded-xl bg-[#fafafa]  dark:bg-[#28293d] dark:text-white  float-none gap-4"
   style="width:280px"
 >
   <div>
@@ -362,7 +378,7 @@ data.forEach((item) => {
   <div>
     <a href="./educationDetails.html"><h1 class="text-[13px]">${item.title}</h1></a>
     <p
-      class="w-[80%] mx-auto text-[10px] my-2 text-[#000000a3] text-justify"
+      class="w-[80%] mx-auto text-[10px] my-2 text-[#000000a3] dark:text-gray-300 text-justify"
     >
       ${item.text}
     </p>
