@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.display-none {
+  @apply hidden;
+}
+
 @font-face {
   font-family: "dana-light";
 
