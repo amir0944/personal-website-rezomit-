@@ -1209,6 +1209,60 @@ body {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:bg-\[\]) {
+  background-color: ;
+}
+
+:is(.dark .dark\:bg-\[\#\#1c1c28\]) {
+  background-color: ##1c1c28;
+}
+
+:is(.dark .dark\:bg-\[\#1c1c28\]) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 28 40 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-\[\#28293d\]) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 41 61 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-\[\#\]) {
+  background-color: #;
+}
+
+:is(.dark .dark\:bg-\[\#2a2b37\]) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 43 55 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-\[\#292a39\]) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 42 57 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-\[292a39\]) {
+  background-color: 292a39;
+}
+
+:is(.dark .dark\:text-white) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-\[\]) {
+  color: ;
+}
+
+:is(.dark .dark\:text-gray-300) {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-\[\#\]) {
+  color: #;
+}
+
 @media (min-width: 768px) {
   .md\:overflow-hidden {
     overflow: hidden;
