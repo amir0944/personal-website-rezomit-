@@ -381,7 +381,7 @@ const themeSwitch = () => {
   }
   document.documentElement.classList.add("dark");
   localStorage.setItem("theme", "dark");
-  iconToggle;
+  iconToggle();
 };
 // ---------
 sunIcon.addEventListener("click", () => {
