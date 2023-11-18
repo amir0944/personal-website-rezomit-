@@ -44,7 +44,7 @@ data.forEach((item, key) => {
     swiperSlide.className = "swiper-slide";
 
     const slideContent = `
-    <div class="bg-[#fafafa] dark:bg-[#28293d] dark:text-white w-[290px] lg:w-[280px] h-[340px] p-2 m-2 mb-2 rounded-xl">
+    <div class="bg-[#fafafa] dark:bg-[#28293d] dark:text-white w-auto lg:w-[280px] h-[340px] p-2 m-2 mb-2 rounded-xl">
     <a 
     href="../portfolio/portfolioDetails.html"
     ><img src="${item.image}" class="rounded-xl" alt="" /></a>
@@ -159,7 +159,7 @@ data.forEach((item, key) => {
 
     const slideContent = `
   <div
-  class="grid grid-cols-1 lg:grid-cols-2 p-3 mb-4 rounded-xl bg-[#fafafa]  dark:bg-[#28293d] dark:text-white  float-none gap-4"
+  class="lg:grid grid-cols-1 lg:grid-cols-2 p-3 mb-4 rounded-xl bg-[#fafafa]  dark:bg-[#28293d] dark:text-white  flex-none gap-4 w-auto"
 >
   <div>
   <a href="./educationDetails.html"><img
