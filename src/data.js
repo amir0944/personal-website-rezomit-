@@ -168,7 +168,7 @@ function portfolioDataSet(category = "all") {
       swiperSlide.className = "swiper-slide";
 
       const slideContent = `
-      <div class="bg-[#fafafa] dark:bg-[#28293d] dark:text-white w-auto lg:w-[280px] h-[345px] p-2 m-2 mb-2 rounded-xl">
+      <div class="bg-[#fafafa] dark:bg-[#28293d] dark:text-white w-auto lg:w-[280px] h-[345px] p-2 mb-2 rounded-xl">
       <a 
       href="./portfolio/portfolioDetails.html"
       ><img src="${item.image}" class="rounded-xl" alt="" /></a>
