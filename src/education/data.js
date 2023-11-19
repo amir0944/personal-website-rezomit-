@@ -210,7 +210,7 @@ data = [
   },
   {
     image: "../../assets/histori.png",
-    title: "آموزش مدیریت کمپین های تبلیغاتی و دیجیتال...",
+    title: "آموزش مدیریت کمپین های دیجیتال...",
     text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
     date: "سال: 1402",
     prof: "../../assets/07.png",
@@ -365,8 +365,7 @@ data.forEach((item) => {
 
   const slideContent = `
   <div
-  class="p-3 m-4 mb-4 rounded-xl bg-[#fafafa]  dark:bg-[#28293d] dark:text-white  float-none gap-4"
-  style="width:280px"
+  class="p-3 m-4 mb-4 rounded-xl bg-[#fafafa]  dark:bg-[#28293d] dark:text-white  float-none gap-4 lg:w-[280px] w-auto"
 >
   <div>
   <a href="./educationDetails.html"><img

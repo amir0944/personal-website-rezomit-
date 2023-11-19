@@ -341,7 +341,7 @@ data.forEach((item, key) => {
   <img src="${item.image}" class="rounded-xl" alt="" />
   <div class="flex justify-between mt-[1rem]">
     <p class="text-[gray]">${item.job}</p>
-    <p class="dark:text-white>${item.username}</p>
+    <p>${item.username}</p>
   </div>
 </div>
 `;
