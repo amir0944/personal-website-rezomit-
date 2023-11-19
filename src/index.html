@@ -15,45 +15,6 @@
         background-image: url("../assets/background.png");
         height: 150px;
       }
-      .overlay {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1030;
-        top: 0;
-        left: 0;
-        overflow-x: hidden;
-        transition: 0.5s;
-      }
-
-      .overlay-content {
-        position: relative;
-        width: 100%;
-        text-align: center;
-      }
-
-      .overlay a {
-        text-decoration: none;
-        font-size: 36px;
-        display: block;
-        transition: 0.3s;
-      }
-
-      .overlay a:hover,
-      .overlay a:focus {
-        color: #f1f1f1;
-      }
-
-      @media screen and (max-height: 450px) {
-        .overlay a {
-          font-size: 20px;
-        }
-        .overlay .closebtn {
-          font-size: 40px;
-          top: 15px;
-          right: 35px;
-        }
-      }
     </style>
   </head>
 
@@ -101,7 +62,7 @@
             >
             <a
               href="#"
-              class="py-3 px-1 md:p-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[140px] lg:w-auto"
+              class="py-3 px-1 md:p-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl lg:w-[122px]"
               >طراحی رابط کاربری</a
             >
           </div>
@@ -145,135 +106,7 @@
             </svg>
           </a>
         </div>
-        <!-- menu mobile -->
-        <div class="flex items-center lg:hidden">
-          <div id="myNav" class="overlay">
-            <div
-              class="h-screen bg-[#0000007b] dark:bg-[rgba(255,255,255,0.65)] p-2"
-            >
-              <div class="flex items-center justify-between">
-                <a href="javascript:void(0)" onclick="closeNav()"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-[40px] h-[40px] dark:text-white text-black bg-[#f5f5f5] dark:bg-[#28293d] rounded-xl"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </a>
-                <a href="#test" onclick="closeNav()">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-[40px] h-[40px] dark:text-white text-black bg-[#f5f5f5] dark:bg-[#28293d] rounded-xl"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15.75 19.5L8.25 12l7.5-7.5"
-                    />
-                  </svg>
-                </a>
-              </div>
-              <div class="items-center justify-between my-[2rem]">
-                <img
-                  src="../assets/icon3.png"
-                  class="w-[48px] p-3 bg-[#FFF5F5] dark:bg-[#fd3b3117] rounded-xl"
-                  alt=""
-                />
-                <a
-                  href="#"
-                  class="p-2 bg-[#fafafa] dark:bg-[#28293d] text-black dark:text-white rounded-xl w-max text-center my-2"
-                  style="font-size: 11px"
-                  >تصویر سازی</a
-                >
-                <a
-                  href="#"
-                  class="p-2 bg-[#fafafa] dark:bg-[#28293d] text-black dark:text-white rounded-xl w-max text-center mb-2"
-                  style="font-size: 11px"
-                  >فوتوشاپ</a
-                >
-                <a
-                  href="#"
-                  class="p-2 bg-[#fafafa] dark:bg-[#28293d] text-black dark:text-white rounded-xl w-max text-center mb-2"
-                  style="font-size: 11px"
-                  >افتر افکت</a
-                >
-              </div>
-              <div class="items-center justify-between mb-[2rem]">
-                <img
-                  src="../assets/icon.png"
-                  class="h-[45px] p-3 bg-[#9E5CF261] dark:bg-[#9859e821] rounded-xl mb-2"
-                  alt=""
-                />
-                <a
-                  href="#"
-                  class="p-2 bg-[#fafafa] dark:bg-[#28293d] text-black dark:text-white rounded-xl w-max text-center mb-2"
-                  style="font-size: 11px"
-                  >وکتور</a
-                >
-                <a
-                  href="#"
-                  class="p-2 bg-[#fafafa] dark:bg-[#28293d] text-black dark:text-white rounded-xl w-max lg:w-auto text-center m-2"
-                  style="font-size: 11px"
-                  >طراحی رابط کاربری</a
-                >
-              </div>
-              <div class="items-center justify-between text-black">
-                <img
-                  src="../assets/icon2.png"
-                  class="h-[40px] p-3 bg-[#EBFAF5] dark:bg-[#039f6a17] rounded-xl mb-2"
-                  alt=""
-                />
-                <a
-                  href="#"
-                  class="p-2 text-black bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-max mb-2"
-                  style="font-size: 11px"
-                  >یونیتی</a
-                >
-                <a
-                  href="#"
-                  class="p-2 text-black bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-max mb-2"
-                  style="font-size: 11px"
-                  >ریکت</a
-                >
-                <a
-                  href="#"
-                  class="p-2 text-black bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-max"
-                  style="font-size: 11px"
-                  >پایتون</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="dark:bg-[#28293d] bg-[#f5f5f5] p-2 rounded-xl w-12 h-12 dark:text-white text-black"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </span>
-        </div>
+        <!-- btn dark mode -->
         <div
           class="w-max rounded-xl bg-[#fafafa] dark:bg-[#28293d] dark:text-white"
         >
@@ -312,6 +145,88 @@
               </svg>
             </a>
           </div>
+        </div>
+        <!-- menu mobile -->
+        <a href="#test" class="flex lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-[40px] h-[40px] dark:text-white text-black bg-[#f5f5f5] dark:bg-[#28293d] rounded-xl"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </a>
+      </div>
+      <div
+        class="flex md:flex lg:hidden overflow-x-scroll lg:overflow-x-hidden gap-[1rem] p-2 m-2 lg:justify-center text-center items-center"
+      >
+        <div class="flex gap-1 items-center text-[0.75rem]">
+          <img
+            src="../assets/icon3.png"
+            class="w-[42px] p-[10px] bg-[#FFF5F5] dark:bg-[#fd3b3117] rounded-xl"
+            alt=""
+          />
+          <a
+            href="#"
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[92px]"
+            >تصویر سازی</a
+          >
+          <a
+            href="#"
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+            >فوتوشاپ</a
+          >
+          <a
+            href="#"
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[88px]"
+            >افتر افکت</a
+          >
+        </div>
+        <div class="flex gap-1 items-center text-[0.75rem]">
+          <img
+            src="../assets/icon.png"
+            class="h-[35px] p-[10px] bg-[#9E5CF261] dark:bg-[#9859e821] rounded-xl"
+            alt=""
+          />
+          <a
+            href="#"
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+            >وکتور</a
+          >
+          <a
+            href="#"
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[122px]"
+            >طراحی رابط کاربری</a
+          >
+        </div>
+        <div class="flex gap-1 items-center text-[0.75rem]">
+          <img
+            src="../assets/icon2.png"
+            class="h-[35px] p-[10px] bg-[#EBFAF5] dark:bg-[#039f6a17] rounded-xl"
+            alt=""
+          />
+          <a
+            href="#"
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+            >یونیتی</a
+          >
+          <a
+            href="#"
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+            >ریکت</a
+          >
+          <a
+            href="#"
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+            >پایتون</a
+          >
         </div>
       </div>
       <!-- end header meno -->
@@ -688,13 +603,6 @@
           },
         },
       });
-      function openNav() {
-        document.getElementById("myNav").style.width = "50%";
-      }
-
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
     </script>
   </body>
 </html>
