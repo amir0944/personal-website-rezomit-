@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>رزومیت</title>
+    <style>
+      .backimg {
+        background-image: url("../assets/background.png");
+        height: 150px;
+      }
+    </style>
+  </head>
+
+  <body dir="rtl" style="overflow-x: hidden" class="bg-white dark:bg-[#1c1c28]">
+    <!-- start container -->
+      
+      <!-- start header meno -->
+      <div class="w-4/5 m-auto flex justify-between items-center">
+        <!-- menu desktop -->
+        <div
+          class="lg:flex hidden gap-[3rem] p-2 m-2 lg:justify-center text-center items-center md:hidden"
+        >
+          <div class="flex gap-3 items-center text-[0.75rem]">
+            <img
+              src="../assets/icon3.png"
+              class="w-[48px] p-3 bg-[#FFF5F5] dark:bg-[#fd3b3117] rounded-xl"
+              alt=""
+            />
+            <p
+              class="py-3 px-1 md:py-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[80px]"
+            >
+              تصویر سازی
+            </p>
+            <p
+              class="py-3 px-1 md:py-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[80px]"
+            >
+              فوتوشاپ
+            </p>
+            <p
+              class="py-3 px-1 md:py-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[80px]"
+            >
+              افتر افکت
+            </p>
+          </div>
+          <div class="flex gap-3 items-center text-[0.75rem]">
+            <img
+              src="../assets/icon.png"
+              class="h-[45px] p-3 bg-[#9E5CF261] dark:bg-[#9859e821] rounded-xl"
+              alt=""
+            />
+            <p
+              class="py-3 px-1 md:p-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[60px]"
+            >
+              وکتور
+            </p>
+            <p
+              class="py-3 px-1 md:p-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl lg:w-[122px]"
+            >
+              طراحی رابط کاربری
+            </p>
+          </div>
+          <div class="flex gap-3 items-center text-[0.75rem]">
+            <img
+              src="../assets/icon2.png"
+              class="h-[40px] p-3 bg-[#EBFAF5] dark:bg-[#039f6a17] rounded-xl"
+              alt=""
+            />
+            <p
+              class="py-3 px-1 md:py-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[60px]"
+            >
+              یونیتی
+            </p>
+            <p
+              class="py-3 px-1 md:py-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[60px]"
+            >
+              ریکت
+            </p>
+            <p
+              class="py-3 px-1 md:py-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[60px]"
+            >
+              پایتون
+            </p>
+          </div>
+          <a href="#test">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                class="text-black dark:text-white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- btn dark mode -->
+        <div
+          class="w-max rounded-xl bg-[#fafafa] dark:bg-[#28293d] dark:text-white"
+        >
+          <h1></h1>
+          <div class="flex">
+            <a
+              href="#"
+              class="sun p-2 border-2 rounded-xl text-[#fafafa] bg-[#1c1c28] border-[#31324a]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="moon p-2 bg-white border-2 rounded-xl border-[#eee] text-[#333]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- menu mobile -->
+        <a href="#test" class="flex lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-[40px] h-[40px] dark:text-white text-black bg-[#f5f5f5] dark:bg-[#28293d] rounded-xl"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </a>
+      </div>
+      <!-- menu mobile -->
+      <div
+        class="flex md:flex lg:hidden overflow-x-scroll lg:overflow-x-hidden gap-[1rem] p-2 m-2 lg:justify-center text-center items-center"
+      >
+        <div class="flex gap-1 items-center text-[0.75rem]">
+          <img
+            src="../assets/icon3.png"
+            class="w-[42px] p-[10px] bg-[#FFF5F5] dark:bg-[#fd3b3117] rounded-xl"
+            alt=""
+          />
+          <p
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[92px]"
+          >
+            تصویر سازی
+          </p>
+          <p
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+          >
+            فوتوشاپ
+          </p>
+          <p
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[88px]"
+          >
+            افتر افکت
+          </p>
+        </div>
+        <div class="flex gap-1 items-center text-[0.75rem]">
+          <img
+            src="../assets/icon.png"
+            class="h-[35px] p-[10px] bg-[#9E5CF261] dark:bg-[#9859e821] rounded-xl"
+            alt=""
+          />
+          <p
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+          >
+            وکتور
+          </p>
+          <p
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-[122px]"
+          >
+            طراحی رابط کاربری
+          </p>
+        </div>
+        <div class="flex gap-1 items-center text-[0.75rem]">
+          <img
+            src="../assets/icon2.png"
+            class="h-[35px] p-[10px] bg-[#EBFAF5] dark:bg-[#039f6a17] rounded-xl"
+            alt=""
+          />
+          <p
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+          >
+            یونیتی
+          </p>
+          <p
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+          >
+            ریکت
+          </p>
+          <p
+            class="py-2 px-3 bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-xl w-auto"
+          >
+            پایتون
+          </p>
+        </div>
+      </div>
+      <!-- end header meno -->
+      <!-- start image -->
+      <div
+        class="w-full lg:w-4/5 m-auto grid grid-cols-1 lg:grid-cols-2 mt-[3rem]"
+      >
+        <!-- start right bar -->
+        <div class="text-right px-[2rem] pt-0 lg:pt-[5rem] dark:text-white">
+          <div class="justify-center items-center">
+            <h1 class="text-[2rem] lg:text-[3rem] font-[plasma]">
+              سلام بچه ها 🙌
+            </h1>
+            <h1 class="text-[2rem] lg:text-[3rem] font-[plasma]">
+              من ساراام؛ برنامه نویس و طراح
+            </h1>
+            <p class="text-[19px] mt-4 text-gray-600">
+              برای شناختن من این صفحه رو تااخر بخون :)
+            </p>
+          </div>
+          <div class="flex pt-10 items-center gap-6">
+            <button
+              class="flex border-[none] items-center bg-black dark:bg-[#28293d] text-white h-[50px] pr-4 rounded-xl"
+            >
+              <p class="w-[78px]">بزن بریم</p>
+              <img src="../assets/v6-icon (free)2.png" alt="" />
+            </button>
+            <img
+              src="../assets/booked.png"
+              alt=""
+              class="w-[200px] h-[100px]"
+            />
+          </div>
+        </div>
+        <!-- start left bar -->
+        <div class="mt-6 lg:mt-0">
+          <img src="../assets/image.png" alt="" class="" />
+        </div>
+        <!-- end left bar -->
+      </div>
+      <!-- end image -->
+      <!-- start search portfolio -->
+      <div class="justify-center mb-[4rem] w-4/5 m-auto">
+        <!-- title -->
+        <div class="text-center mb-4 dark:text-white">
+          <h1 class="font-[plasma] text-[2rem] lg:text-[5rem]">
+            جستجو کردن از بین <span class="text-[#B176F2]">452</span> تا از
+          </h1>
+          <h1 class="font-[plasma] text-[2rem] lg:text-[3rem] mt-[-10px]">
+            نمونه کار های من :)
+          </h1>
+        </div>
+        <!-- search input -->
+        <div class="flex gap-4 justify-center items-center mb-[2rem]">
+          <input
+            type="text"
+            class="border-0 focus:outline-none bg-[#FAFAFA] w-auto lg:w-[600px] h-[50px] pr-4 rounded-xl"
+            placeholder="مثلا: پروژه فروشگاهی..."
+          />
+          <button
+            class="items-center bg-black text-white h-[50px] rounded-xl text-center p-2"
+          >
+            <p class="w-[90px]">دسته بندی</p>
+          </button>
+        </div>
+        <!-- footer -->
+        <div class="text-center">
+          <a href="#test" class="text-gray-400 justify-center"
+            >یا دیدن تمام نمونه کارها ...</a
+          >
+        </div>
+      </div>
+      <!-- end search portfolio -->
+      <!-- start portfolio -->
+      <div id="test" class="mb-[3rem] w-4/5 m-auto">
+        <!-- meno -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 mb-4 dark:text-white">
+          <div class="pt-3 col-span-1">
+            <h1 class="font-[plasma] text-[2rem] lg:text-[3rem]">
+              نمونه کارها
+            </h1>
+          </div>
+          <div
+            class="col-span-2 hidden lg:flex pt-3 justify-normal lg:justify-end text-center items-center overflow-x-scroll md:overflow-hidden"
+          >
+            <div class="flex gap-1 items-center">
+              <button category="game" class="w-[115px] category-button">
+                گیم
+              </button>
+              <button category="image" class="w-[115px] category-button">
+                تصویر سازی
+              </button>
+              <button category="programming" class="w-[115px] category-button">
+                برنامه نویسی
+              </button>
+              <button category="design" class="w-[115px] category-button">
+                طراحی
+              </button>
+              <button
+                category="all"
+                active="true"
+                class="w-[115px] p-2 md:p-3 bg-[#fafafa] dark:bg-[#28293d] rounded-xl category-button category-button-active"
+              >
+                همه
+              </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="bg-[#fafafa] dark:bg-[#28293d] p-3 mr-2 rounded-xl w-12 h-12"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.792 2.938A49.069 49.069 0 0112 2.25c2.797 0 5.54.236 8.209.688a1.857 1.857 0 011.541 1.836v1.044a3 3 0 01-.879 2.121l-6.182 6.182a1.5 1.5 0 00-.439 1.061v2.927a3 3 0 01-1.658 2.684l-1.757.878A.75.75 0 019.75 21v-5.818a1.5 1.5 0 00-.44-1.06L3.13 7.938a3 3 0 01-.879-2.121V4.774c0-.897.64-1.683 1.542-1.836z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- list -->
+        <div
+          class="hidden lg:flex lg:flex-wrap lg:justify-between"
+          id="portfolioD"
+        ></div>
+
+        <div class="flex flex-wrap justify-center lg:justify-between lg:hidden">
+          <div class="swiper slider w-max m-auto">
+            <div class="swiper-wrapper" id="portfolio"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end portfolio -->
+      <!-- start partners -->
+      <div
+        class="grid grid-cols-1 lg:grid lg:grid-cols-6 mb-[23rem] md:mb-[33rem] lg:mb-[9rem] mt-0 lg:mt-[12rem] dark:text-white"
+      >
+        <div
+          class="col-span-2 flex-none justify-center w-full m-auto text-center px-[2rem] mb-[2rem] ml-8"
+        >
+          <h1 class="font-[plasma] text-[3rem] w-max m-auto">
+            <span class="text-[#B176F2]">همکاران</span> من:)
+          </h1>
+          <p class="w-[310px] lg:w-[360px] m-auto">
+            اینجا میتوتی برخی از همکاران و کارفرما های من رو ببینی که تجربه کار
+            ون با من راضی بوده باشن:)
+          </p>
+          <button
+            class="flex border-[none] items-center justify-center bg-black dark:bg-[#28293d] text-white p-3 w-max m-auto mt-5 rounded-xl"
+          >
+            <p>مشاهده همه</p>
+            <img src="../assets/v6-icon (free)2.png" alt="" />
+          </button>
+        </div>
+        <div class="col-span-4 backimg my-auto rounded-r-3xl mt-[5rem] lg:mt-0">
+          <div
+            class="w-full lg:w-max mt-[-5rem] lg:mt-[-9rem] mr-0 lg:mr-[13rem] grid grid-cols-2 lg:grid lg:grid-cols-3"
+            id="partners"
+          ></div>
+        </div>
+      </div>
+      <!-- end partners -->
+      <!-- start education -->
+      <div id="test2" class="w-4/5 m-auto">
+        <div class="flex justify-between items-center mb-4 dark:text-white">
+          <h1 class="text-[2rem] lg:text-[3rem] font-[plasma]">سوابق آموزشی</h1>
+          <a
+            href="./education/educationAll.html"
+            class="p-2 lg:p-3 bg-[#fafafa] dark:bg-[#28293d] rounded-xl"
+            >مشاهده همه</a
+          >
+        </div>
+        <div class="grid grid-rows-1 lg:grid-cols-2 gap-2" id="education"></div>
+      </div>
+      <!-- end education -->
+      <!-- start best portfolio -->
+      <div class="mt-[2rem] w-4/5 m-auto">
+        <div class="flex justify-between items-center mb-4 dark:text-white">
+          <h1 class="text-[2rem] lg:text-[3rem] font-[plasma]">
+            بهترین نمونه کارها
+          </h1>
+          <a
+            href="./education/educationAll.html"
+            class="p-2 lg:p-3 bg-[#fafafa] dark:bg-[#28293d] rounded-xl"
+            >مشاهده همه</a
+          >
+        </div>
+        <div class="flex flex-wrap justify-center lg:justify-between">
+          <div class="swiper slider2 w-max m-auto">
+            <div class="swiper-wrapper" id="bestPortfolio"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end best portfolio -->
+      <!-- start my email -->
+      <div
+        class="w-full lg:w-[90%] float-left relative mt-[2rem] mb-[2rem] bg-[#fafafa] dark:bg-[#28293d] dark:text-white rounded-r-[34px]"
+      >
+        <img src="../assets/amirDown.png" alt="" />
+        <div
+          style="top: 5rem"
+          class="grid grid-cols-1 lg:grid lg:grid-cols-2 w-4/5 absolute top-[2rem] right-[2rem] lg:right-[6rem] flex-none items-center"
+        >
+          <div class="flex items-center p-2 bg-[white] w-max h-max rounded-xl">
+            <input
+              type="text"
+              class="border-0 focus:outline-none bg-[white] text-black w-auto lg:w-[400px] h-[30px] pr-4 rounded-xl"
+              placeholder="آدرس ایمیل..."
+            />
+            <button
+              class="items-center bg-black text-white h-[40px] rounded-xl text-center p-2"
+            >
+              <p class="w-[90px]">ارسال</p>
+            </button>
+          </div>
+          <div class="text-center mt-[2rem] lg:mt-0">
+            <h1 class="text-[1rem] lg:text-[1.5rem] font-[dana-extra]">
+              برای همکاری با من میتونی همین الان
+            </h1>
+            <h1 class="text-[1rem] lg:text-[1.5rem] font-[dana-extra]">
+              واسم ایمیل بزنی :)
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- end my email -->
+      <!-- start footer -->
+      <div
+        class="p-4 rounded-t-xl bg-[#fafafa] dark:bg-[#28293d] w-4/5 m-auto flex-none items-center mt-[22rem]"
+      >
+        <div class="grid grid-cols-1 lg:grid lg:grid-cols-6">
+          <img
+            src="../assets/codern 1.png"
+            class="m-auto lg:m-0 col-span-1 w-[140px]"
+            alt=""
+          />
+          <div
+            class="bg-[#F5F2FA] dark:bg-[#292a39] px-10 py-4 text-justify rounded-xl rounded-ee-[50px] col-span-5 h-max"
+          >
+            <p class="leading-6 text-[#080808] dark:text-white text-[0.75rem]">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+              کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+              جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای
+              طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 lg:grid lg:grid-cols-2 px-[2rem] py-4 bg-[#F5F5F5] dark:bg-[#292a39] rounded-xl mt-[4rem]"
+        >
+          <p
+            class="text-center lg:text-right text-[#3E3232] dark:text-white text-[0.75rem]"
+          >
+            all copyright &copy; 2022 reserved
+          </p>
+          <p
+            class="text-center lg:text-left mt-8 lg:mt-0 text-[#3E3232] dark:text-white text-[0.75rem]"
+          >
+            ساخته شده در استودیو کد سفید
+          </p>
+        </div>
+      </div>
+      <!-- end footer -->
+    </div>
+    <!-- end containeer -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./data.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      portfolioDataSet();
+
+      $(document).on("click", ".category-button", function () {
+        portfolioDataSet($(this).attr("category"));
+
+        let isActive = $(this).attr("active");
+
+        if (!isActive) {
+          $(".category-button-active").removeAttr("active");
+          $(".category-button-active").removeClass(
+            "p-2 md:p-3 bg-[#fafafa] dark:bg-[#28293d] rounded-xl"
+          );
+          $(".category-button-active").removeClass("category-button-active");
+
+          $(this).attr("active", "true");
+          $(this).addClass("category-button-active");
+          $(this).addClass(
+            "p-2 md:p-3 bg-[#fafafa] dark:bg-[#28293d] rounded-xl"
+          );
+        }
+      });
+      var swiper = new Swiper(".slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          450: {
+            slidesPerView: 1.25,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1480: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+      var swiper = new Swiper(".slider2", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          450: {
+            slidesPerView: 1.25,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1480: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

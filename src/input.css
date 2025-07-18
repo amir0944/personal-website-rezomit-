@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.display-none {
+  @apply hidden;
+}
+
+@font-face {
+  font-family: "dana-light";
+
+  src: url("../assets/font/DanaPro(10Wt)/Farsi numerals/Webfonts/woff2/DanaFaNum-Regular.woff2")
+      format("woff2"),
+    url("../assets/font/DanaPro(10Wt)/Farsi numerals/Webfonts/woff/DanaFaNum-Regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "dana-bold";
+
+  src: url("../assets/font/DanaPro(10Wt)/Farsi numerals/Webfonts/woff2/DanaFaNum-Bold.woff2")
+      format("woff2"),
+    url("../assets/font/DanaPro(10Wt)/Farsi numerals/Webfonts/woff/DanaFaNum-Bold.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "dana-extra";
+
+  src: url("../assets/font/DanaPro(10Wt)/Farsi numerals/Webfonts/woff2/DanaFaNum-ExtraBold.woff2")
+      format("woff2"),
+    url("../assets/font/DanaPro(10Wt)/Farsi numerals/Webfonts/woff/DanaFaNum-ExtraBold.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "plasma";
+
+  src: url("../assets/font/PlasmaFont-irfont.ir/WOFF-WOFF2/plasma-bold.woff2")
+      format("woff2"),
+    url("../assets/font/PlasmaFont-irfont.ir/WOFF-WOFF2/plasma-bold.woff")
+      format("woff");
+}
+body {
+  font-family: "dana-light";
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  border-radius: 30%;
+  padding: 0.6rem 0.8rem;
+}
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  border-radius: 30%;
+  padding: 0.6rem 0.8rem;
+}
