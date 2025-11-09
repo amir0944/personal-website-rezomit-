@@ -1,16 +1,20 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { tseslint } from "typescript-eslint";
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
 
-export default defineConfig({
-  plugins: [react()],
-  build: {
-    outDir: "dist",
-    rollupOptions: {
-      output: {
-        entryFileNames: `assets/[name].[hash].js`,
-        chunkFileNames: `assets/[name].[hash].js`,
-        assetFileNames: `assets/[name].[hash].[ext]`,
+export default tseslint.config([
+  {
+    files: ["**/*.{ts,tsx}"],
+    extends: [
+      ...tseslint.configs.recommendedTypeChecked,
+      reactX.configs["recommended-typescript"],
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+        tsconfigRootDir: import.meta.dirname,
       },
     },
   },
-});
+]);
